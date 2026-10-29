@@ -1,4 +1,4 @@
-# Tier 7 Madness (TAUR Edition).
+# Tier 7 Madness (TAUR Edition)
 A successor of the original Tier 7 Madness mod by X-Core. Made by/for the TAUR community.
 
 Join our discord server - https://discord.gg/tMVEffyXpD
