@@ -96,7 +96,7 @@
 var cloverfield = {
   id: "cloverfield",
   obj: "https://starblast.data.neuronality.com/mods/objects/plane.obj",
-  emissive: "https://raw.githubusercontent.com/X-Core526/Tier-7-Madness-TAUR-Edition/14da3e8a593cd404a74943879571a3a490d3261f/Objects/Bases%20(80)/Cloverfield.png",
+  emissive: "https://raw.githubusercontent.com/X-Core526/Tier-7-Madness-TAUR-Edition/2721f4b8b38955775ca238c7031caeca373a1e47/Objects/Bases%20(80)/Cloverfield.png",
   transparent: true
 }
 
