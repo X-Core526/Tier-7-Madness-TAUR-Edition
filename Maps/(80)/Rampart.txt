@@ -80,21 +80,35 @@
 "999  999999  999999  999999  999999  999999  999999  999999  999999  999999  999\n"+
 "                                                                                ",
   shipspawn: [{x:-220,y:0},{x:220,y:0}],
-  radar: {type:"box",width:16,height:16},
-  basedmg: [{x:-260,x2:-180,y:40,y2:-40},{x:260,x2:180,y:40,y2:-40}]
+  
+  basedmg: [
+    [{x:-280,y:30},{x:-250,y:60},{x:-190,y:60},{x:-160,y:30},{x:-160,y:-30},{x:-190,y:-60},{x:-250,y:-60},{x:-280,y:-30}],
+    [{x:280,y:-30},{x:250,y:-60},{x:190,y:-60},{x:160,y:-30},{x:160,y:30},{x:190,y:60},{x:250,y:60},{x:280,y:30}]
+  ],
+
+  teamzones: [
+    [{x:-365,y:115},{x:-95,y:115},{x:-95,y:-115},{x:-365,y:-115}],
+    [{x:365,y:-115},{x:95,y:-115},{x:95,y:115},{x:365,y:115}]
+  ],
+
+  barriers: [
+    [{x:-335,y:35},{x:-335,y:-35}],
+    [{x:335,y:35},{x:335,y:-35}]
+  ]
   },
 ];
 
-;(function setCenterObject() {
-    game.setObject({
-        id: "centerImage",
-        type: {
-            id: "centerImage",
-            obj: "https://starblast.data.neuronality.com/mods/objects/plane.obj",
-            emissive: "https://raw.githubusercontent.com/eclipse9884236-code/T7M/8a2a275230585b42c0dd9267dac2b7bf0c7ae301/Bases/(80)-Rampart-Bases.png"
-        },
-        position: { x: 0, y: 0, z: -5 },
-        scale: { x: 800, y: 800, z: 1 },
-        rotation: { x: 0, y: 0, z: Math.PI }
-    });
-})();
+var rampart = {
+  id: "rampart",
+  obj: "https://starblast.data.neuronality.com/mods/objects/plane.obj",
+  emissive: "https://raw.githubusercontent.com/X-Core526/Tier-7-Madness-TAUR-Edition/6b7528d306967bcbc12ff67cb519b44dc93ec765/Objects/Bases%20(80)/Rampart.png",
+  transparent: true
+}
+
+  game.setObject({
+    id:"rampart", 
+    type: rampart,
+    position: {x:0, y:0,z:-25}, 
+    scale: {x:800,y:800,z:1}, 
+    rotation: {x:Math.PI,y:0,z:0}
+  });
